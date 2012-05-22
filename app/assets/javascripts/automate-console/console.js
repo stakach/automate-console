@@ -2,7 +2,7 @@
 //= require jquery_ujs
 //= require automate-console/jquery-ui-1.8.20.min
 //= require automate-console/jquery.mousewheel-min
-//= require automate-console/jquery.terminal-0.4.15.min
+//= require automate-console/jquery.terminal-0.4.15
 //= require jquery.automate
 
 

@@ -1,0 +1,5 @@
+h1. automate-em
+
+A simple console for automate-em administration
+
+

@@ -3,3 +3,11 @@ h1. automate-em
 A simple console for automate-em administration
 
 
+h2. Adding to a control project
+
+# Add @gem "automate-console"@ to your gem file
+# From the console run
+## @bundle install@
+## @rake railties:install:migrations FROM=automate_console@
+## @rake db:migrate@
+

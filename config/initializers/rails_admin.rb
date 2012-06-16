@@ -240,7 +240,6 @@ RailsAdmin.config do |config|
 			field :actual_name
 			field :module_name
 			field :classname
-			field :filename
 			field :description
 		end
 		
@@ -249,7 +248,6 @@ RailsAdmin.config do |config|
 			field :actual_name
 			field :module_name
 			field :classname
-			field :filename
 			field :description
 			field :default_port
 			field :default_uri

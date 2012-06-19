@@ -126,18 +126,10 @@ $.extend_if_has = function(desc, source, array) {
 			terminal.pause();
 			this.send('ls');
 			return '';
-		}, 
-		"new": function(terminal, system){
-			if(!!system) {
-				this.send('---GOD---.new_system', system);
-				return 'Signal sent...';
-			}
-
-			return 'The syntax of the command is incorrect.';
 		},
 		start: function(terminal, system){
 			if(!!system) {
-				this.send(system + '.start');
+				this.send('.start', system);
 				return 'Signal sent...';
 			}
 
@@ -145,25 +137,17 @@ $.extend_if_has = function(desc, source, array) {
 		},
 		stop: function(terminal, system){
 			if(!!system) {
-				this.send(system + '.stop');
-				return 'Signal sent...';
-			}
-
-			return 'The syntax of the command is incorrect.';
-		},
-		'delete': function(terminal, system){
-			if(!!system) {
-				this.send(system + '.delete');
+				this.send('.stop', system);
 				return 'Signal sent...';
 			}
 
 			return 'The syntax of the command is incorrect.';
 		},
 		reload: function(terminal, system){
-			system = parseInt(system);
+			dep = parseInt(system);
 
 			if(!!system) {
-				this.send('---GOD---.reload', system);
+				this.send('.reload', dep);
 				return 'Signal sent...';
 			}
 

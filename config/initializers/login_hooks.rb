@@ -44,12 +44,14 @@ Login.user_mixin do
 		end
 	end
 end
+User.class_eval &Login.user_mixin
 
 
 Login.group_mixin do
 	has_many	:user_zones,		:dependent => :destroy
 	has_many	:zones,				:through => :user_zones
 end
+Group.class_eval &Login.group_mixin
 
 
 #
